@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Users extends Model
 {
     use HasFactory;
-
-    protected $fillable = [ 'User', 'Username','Password'];
+   
+   
+    protected $table = "User";
+    protected $primarykey = "id";
+    protected $fillable = ['id', 'User', 'Username','Password'];
+    
 }
